@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Кастомные стили === */
+
+/* Убрать скроллбар (но оставить прокрутку) */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* для Internet Explorer и Edge */
+  scrollbar-width: none;     /* для Firefox */
+}
+
+/* Если хочешь потом добавить анимации глобально — сюда */
